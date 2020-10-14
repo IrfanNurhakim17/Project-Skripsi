@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".UbahProfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"/>
+
+            <EditText
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:background="@drawable/stroke_edit_view"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profil_ubah_nama"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="No. Telp"/>
+
+            <EditText
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:background="@drawable/stroke_edit_view"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profil_ubah_notelp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat"/>
+
+            <EditText
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/stroke_edit_view"
+                android:layout_height="wrap_content"
+                android:id="@+id/profil_ubah_Alamat"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:text="Simpan"
+        android:id="@+id/ubah_data_profil"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:background="@drawable/stroke_no_radius3" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

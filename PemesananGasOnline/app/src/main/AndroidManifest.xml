@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pemesanangasonline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Gas Online"
+        android:roundIcon="@drawable/ic_launcher_gas"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".PembayaranTransfer"
+            android:label="Selesaikan Pembayaran"
+            android:parentActivityName=".HomePelanggan">
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailPemesananPelanggan"
+            android:label="Detail Pemesanan"
+            android:parentActivityName=".HomePelanggan" />
+        <activity
+            android:name=".BuatPemesanan"
+            android:label="Buat Pesanan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ProfilPelanggan"
+            android:label="Profil" />
+        <activity
+            android:name=".NotifikasiPelanggan"
+            android:label="Notifikasi" />
+        <activity
+            android:name=".HomePelanggan"
+            android:label="Gas Online" />
+        <activity
+            android:name=".UbahPassword"
+            android:label="Ubah Password"
+            android:parentActivityName=".ProfilAdmin" />
+        <activity
+            android:name=".UbahProfil"
+            android:label="Ubah Profil"
+            android:parentActivityName=".ProfilAdmin" />
+        <activity
+            android:name=".DetailRiwayat"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".RiwayatTransaksi"
+            android:label="Riwayat Transaksi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailPelanggan"
+            android:label="Data Pelanggan"
+            android:parentActivityName=".LihatPelanggan" />
+        <activity
+            android:name=".LihatPelanggan"
+            android:label="Lihat Pelanggan"
+            android:parentActivityName=".DataPelanggan" />
+        <activity
+            android:name=".LihatPengiriman"
+            android:label="Lihat Pengiriman"
+            android:parentActivityName=".HomeAdmin" />
+        <activity
+            android:name=".DetailPemesanan"
+            android:label="Data Pemesanan"
+            android:parentActivityName=".PermintaanPesanan" />
+        <activity
+            android:name=".UbahDataBarang"
+            android:label="@string/kl_gas" />
+        <activity
+            android:name=".DetailPengiriman"
+            android:label="@string/detail_kirim"
+            android:parentActivityName=".LihatPengiriman" />
+        <activity
+            android:name=".PermintaanPesanan"
+            android:label="@string/req_pesanan"
+            android:parentActivityName=".HomeAdmin" />
+        <activity
+            android:name=".KelolaStokGas"
+            android:label="@string/kl_gas"
+            android:parentActivityName=".HomeAdmin" />
+        <activity
+            android:name=".ProfilAdmin"
+            android:label="Profil" />
+        <activity android:name=".DataPelanggan" />
+        <activity android:name=".HomeAdmin" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <service
+            android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name = "com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name = "com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

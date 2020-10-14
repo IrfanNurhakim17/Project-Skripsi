@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".HomePelanggan">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Selamat Datang,"
+            android:textSize="15dp"
+            android:textColor="#FFF"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:paddingLeft="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/username"
+            android:text=""
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:textColor="#FFF"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:text="Informasi Stok Yang Tersedia "
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/bungkus_menu"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:elevation="8dp"
+            android:paddingBottom="2dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Barang"/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text=":"/>
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNama_BarangP"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Stok Tersedia"/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text=":"/>
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvJumlah_StokP"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Jam Operasional 9:00 - 15:00"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:id="@+id/buat_pemesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bungkus_buat_pemesanan"
+            android:padding="10dp"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:elevation="5dp"
+
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pesan"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+
+                />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/Lihat_Detail_Pesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bungkus_detail_pemesanan"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Pesanan"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/riwayat_transaksiP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bungkus_riwayat_pemesanan"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:elevation="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riwayat"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation_pelanggan"
+        app:itemBackground="@android:color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation_pelanggan"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

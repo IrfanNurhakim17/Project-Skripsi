@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".DetailPelanggan">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="@drawable/bungkus_menu"
+            android:layout_centerInParent="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Id User"
+                    android:id="@+id/txt_iduser"/>
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b_iduser"/>
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_iduser"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Username "/>
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_username"/>
+
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/etdetail_username"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password"/>
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_password"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"/>
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_nama"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="No. Telp"/>
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_notelp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"/>
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_Alamat"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        android:background="@drawable/stroke_radius_top"
+        android:id="@+id/ubah_data"
+        android:text="Ubah Data"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        android:background="@drawable/stroke_no_radius"
+        android:id="@+id/hapus_data"
+        android:text="Hapus Data"
+
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        android:background="@drawable/stroke_no_radius"
+        android:id="@+id/tambah_data"
+        android:text="Tambah Data"
+
+        />
+
+</LinearLayout>

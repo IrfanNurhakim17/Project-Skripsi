@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pemesanan Gas Online</string>
+    <string name="kl_gas">Kelola Stok Gas</string>
+    <string name="req_pesanan">Permintaan Pesanan</string>
+    <string name="detail_kirim">Detail Pengiriman</string>
+    <string name="title_activity_home_admin">HomeAdmin</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

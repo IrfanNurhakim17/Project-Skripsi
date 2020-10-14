@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".PembayaranTransfer">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#838383"
+                android:text="Batas Akhir Pembayaran"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:id="@+id/batas_pembayaran"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Transfer Bank"
+                android:background="@drawable/stroke_bawah3"
+                android:paddingBottom="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvnamaBarangP"
+                            android:text="Nomor Rekening"
+                            android:textColor="#838383"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="094 109 9717"
+                            android:id="@+id/norek"
+                            />
+
+                        <TextView
+                            android:textColor="#00B4A2"
+                            android:textSize="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:id="@+id/salin"
+                            android:text="Salin "/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#838383"
+                        android:text="a/n Agen Gas Petrus"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Pembayaran"
+                        android:textColor="#838383"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:textSize="16dp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:id="@+id/total_bayar"/>
+
+                        <TextView
+                            android:textSize="15dp"
+                            android:textColor="#00B4A2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lihat Detail"
+                            android:gravity="right"
+                            android:textStyle="bold"
+                            android:id="@+id/lihat_detail"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unggah Bukti Pembayaran"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="83dp">
+
+                    <RelativeLayout
+                        android:layout_width="106dp"
+                        android:layout_height="83dp"
+                        android:padding="2dp"
+                        android:id="@+id/bungkus_tf"
+                        android:background="@drawable/stroke_radius_foto"
+                        android:visibility="gone"
+                        >
+
+                        <ImageView
+                            android:layout_width="106dp"
+                            android:layout_height="83dp"
+                            android:id="@+id/bukti_transfer"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hapus_foto"
+                            android:background="@drawable/ic_close_pembayaran"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="106dp"
+                        android:layout_height="83dp"
+                        android:text="Foto Bukti Transfer"
+                        android:gravity="center"
+                        android:background="@drawable/stroke_radius_foto"
+                        android:id="@+id/text_foto"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#005047"
+                        android:layout_width="86dp"
+                        android:layout_height="35dp"
+                        android:textStyle="bold"
+                        android:text="Pilih Foto"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/pilih_foto"
+                        android:background="@drawable/stroke_metode_pembayaran"
+                        />
+
+                    <Button
+                        android:textSize="13dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#005047"
+                        android:layout_width="86dp"
+                        android:layout_height="35dp"
+                        android:textStyle="bold"
+                        android:text="Lihat Foto"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/lihat_foto"
+                        android:background="@drawable/stroke_metode_pembayaran"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/unggah_foto"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/stroke_no_radius3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Bayar Pesanan"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/batalkan_pesanan"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/stroke_no_radius4"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Batalkan Pesanan"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center"
+        android:height="65dp"
+        android:width="65dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid
+                android:color="@color/colorPrimary"
+                />
+            <corners
+                android:radius="100dp">
+        </corners>
+            <stroke
+                android:color="@color/colorWhite"
+                android:width="1dp"
+                />
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:width="45dp"
+        android:height="47dp"
+        android:drawable="@drawable/ic_gas">
+    </item>
+
+</layer-list>

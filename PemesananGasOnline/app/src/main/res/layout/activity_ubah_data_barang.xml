@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".UbahDataBarang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/bungkus_menu"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="ID Barang"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=":"/>
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_idBarang"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=":"/>
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_namaBarang"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Barang"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=":"/>
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_jumlahBarang"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Harga Barang"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=":"/>
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_hargaBarang"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/stroke_radius_top"
+                android:layout_height="wrap_content"
+                android:text="Tambah Data"
+                android:id="@+id/btn_tambahBarang"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="Ubah Data"
+                android:id="@+id/btn_ubahBarang"
+                android:background="@drawable/stroke_radius_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textColor="#FFF"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke_no_radius"
+                android:text="Tampil Data"
+                android:id="@+id/btn_tampilBarang"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="@drawable/stroke_radius_bot"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:text="Hapus Data"
+                android:id="@+id/btn_hapusBarang"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
